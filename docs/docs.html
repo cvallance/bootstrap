@@ -408,7 +408,7 @@ title: Bootstrap Documentation
 
 
     <h3 id="grid-nesting">Nesting columns</h3>
-    <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to 12.</p>
+    <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-span-*</code> columns within an existing <code>.col-span-*</code> column. Nested rows should include a set of columns that add up to 12.</p>
     <div class="row show-grid">
       <div class="col-span-9">
         Level 1: 9 columns
@@ -439,7 +439,7 @@ title: Bootstrap Documentation
 {% endhighlight %}
 
     <h3 id="grid-column-ordering">Column ordering</h3>
-    <p>Easily change the order of our built-in grid columns with <code>.push*</code> and <code>.pull*</code> modifier classes.</p>
+    <p>Easily change the order of our built-in grid columns with <code>.col-push-*</code> and <code>.col-pull-*</code> modifier classes.</p>
     <div class="row show-grid">
       <div class="col-span-9 col-push-3">9</div>
       <div class="col-span-3 col-pull-9">3</div>
@@ -620,7 +620,7 @@ title: Bootstrap Documentation
     <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
 
     <h3>Small text</h3>
-    <p>For de-emphasizing inline or blocks of text, <small>use the small tag</small> to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&lt;</code> elements.</p>
+    <p>For de-emphasizing inline or blocks of text, <small>use the small tag</small> to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
     <div class="bs-docs-example">
       <p><small>This line of text is meant to be treated as fine print.</small></p>
     </div>
@@ -4975,11 +4975,11 @@ $('#myModal').on('show', function (e) {
       <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
     </div><!-- /example -->
 {% highlight html linenos %}
-<div class="modal">
-  <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+<!-- Button trigger modal -->
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
 
-  <!-- Modal -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
