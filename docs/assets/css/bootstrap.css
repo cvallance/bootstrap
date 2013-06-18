@@ -276,7 +276,6 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -505,8 +504,8 @@ h4 small,
 
 ul,
 ol {
-  padding: 0;
-  margin: 0 0 10px 25px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 ul ul,
@@ -516,17 +515,13 @@ ol ul {
   margin-bottom: 0;
 }
 
-li {
-  line-height: 1.428571429;
-}
-
 .list-unstyled {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .list-inline {
-  margin-left: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -553,26 +548,6 @@ dd {
   margin-left: 10px;
 }
 
-.dl-horizontal:before,
-.dl-horizontal:after {
-  display: table;
-  content: " ";
-}
-
-.dl-horizontal:after {
-  clear: both;
-}
-
-.dl-horizontal:before,
-.dl-horizontal:after {
-  display: table;
-  content: " ";
-}
-
-.dl-horizontal:after {
-  clear: both;
-}
-
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -585,6 +560,26 @@ dd {
 
 .dl-horizontal dd {
   margin-left: 180px;
+}
+
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+
+.dl-horizontal dd:after {
+  clear: both;
+}
+
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+
+.dl-horizontal dd:after {
+  clear: both;
 }
 
 hr {
@@ -1292,7 +1287,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   display: block;
-  min-height: 36px;
+  min-height: 38px;
   padding: 8px 12px;
   font-size: 14px;
   line-height: 1.428571429;
@@ -1368,10 +1363,10 @@ input[type="checkbox"] {
 
 select,
 input[type="file"] {
-  height: 36px;
+  height: 38px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size. TODO: Check if this is still needed when dropping IE7 support */
 
-  line-height: 36px;
+  line-height: 38px;
 }
 
 select[multiple],
@@ -1505,7 +1500,7 @@ input[type="url"].input-small,
 input[type="search"].input-small,
 input[type="tel"].input-small,
 input[type="color"].input-small {
-  min-height: 30px;
+  min-height: 32px;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
@@ -3001,10 +2996,6 @@ a.list-group-item.active .list-group-item-text {
   margin-right: -15px;
 }
 
-.list-group-item > .glyphicon-chevron-right {
-  margin-right: -15px;
-}
-
 .list-group-item > .glyphicon + .badge {
   margin-right: 5px;
 }
@@ -3532,8 +3523,8 @@ button.close {
 }
 
 .navbar-form {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .navbar-form input,
@@ -3704,7 +3695,7 @@ button.close {
 }
 
 .navbar-btn {
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .navbar-text {
