@@ -4674,7 +4674,6 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
-<<<<<<< HEAD
 }
 
 @font-face {
@@ -5330,6 +5329,3 @@ td.visible-print {
 .glyphicon-collapse-top:before {
   content: "\e160";
 }
-=======
-}
->>>>>>> upstream/3.0.0-wip
