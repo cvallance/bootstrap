@@ -5676,7 +5676,6 @@ td.visible-print {
   .hidden-print {
     display: none !important;
   }
-
   tr.hidden-print {
     display: none !important;
   }
