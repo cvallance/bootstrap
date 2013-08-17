@@ -133,6 +133,25 @@
   }
 }
 
+.simple-hidden-xs {
+  .responsive-invisibility();
+}
+.simple-hidden-sm {
+  @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
+    .responsive-invisibility();
+  }
+}
+.simple-hidden-md {
+  @media (min-width: @screen-desktop) and (max-width: @screen-desktop-max) {
+    .responsive-invisibility();
+  }
+}
+.simple-hidden-lg {
+  @media (min-width: @screen-large-desktop) {
+    .responsive-invisibility();
+  }
+}
+
 // Print utilities
 .visible-print {
   .responsive-invisibility();
