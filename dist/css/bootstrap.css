@@ -5649,6 +5649,58 @@ td.hidden-lg {
   }
 }
 
+@media (max-width: 767px) {
+  .simple-hidden-xs {
+    display: none !important;
+  }
+  tr.simple-hidden-xs {
+    display: none !important;
+  }
+  th.simple-hidden-xs,
+  td.simple-hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .simple-hidden-sm {
+    display: none !important;
+  }
+  tr.simple-hidden-sm {
+    display: none !important;
+  }
+  th.simple-hidden-sm,
+  td.simple-hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .simple-hidden-md {
+    display: none !important;
+  }
+  tr.simple-hidden-md {
+    display: none !important;
+  }
+  th.simple-hidden-md,
+  td.simple-hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .simple-hidden-lg {
+    display: none !important;
+  }
+  tr.simple-hidden-lg {
+    display: none !important;
+  }
+  th.simple-hidden-lg,
+  td.simple-hidden-lg {
+    display: none !important;
+  }
+}
+
 .visible-print {
   display: none !important;
 }
