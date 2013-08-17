@@ -134,7 +134,9 @@
 }
 
 .simple-hidden-xs {
-  .responsive-invisibility();
+  @media (max-width: @screen-phone-max) {
+    .responsive-invisibility();
+  }
 }
 .simple-hidden-sm {
   @media (min-width: @screen-tablet) and (max-width: @screen-tablet-max) {
