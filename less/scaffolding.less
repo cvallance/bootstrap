@@ -42,17 +42,22 @@ textarea {
 
 a {
   color: @link-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
     color: @link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:focus {
     .tab-focus();
   }
+}
+
+.active a,
+a.btn {
+  text-decoration: none;
 }
 
 
