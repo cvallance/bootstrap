@@ -293,12 +293,10 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
 .active a,
 a.btn {
   text-decoration: none;
 }
-
 img {
   vertical-align: middle;
 }
